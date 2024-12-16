@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motors after log</title>
+    <link rel="stylesheet" href="../css/all.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        *{
+            flex-wrap: wrap;
+        }
+        .hidden {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- =========================================Start header section======================================== -->
+    <header class="header  py-3 position-sticky top-0 ">
+        <div class="headercon container">
+            <div class="up d-flex align-items-center mb-3">
+                <div>
+                    <a href="../indexafterlog.html" class=" logo text-decoration-none pe-5"><img src="../img/dubizzle-logo-fix-width1.png" alt=""></a>
+                </div>
+                <div class=" d-none d-md-flex align-items-center">
+                    <div class="icon"><a href="#"><i class="fa-solid fa-car text-danger"></i></div> <span class="ms-2 me-5 ">Motors</span></a>
+                </div>
+                <div class=" d-none  d-md-flex  align-items-center">
+                    <div class="icon"><a href=""><i class="fa-solid fa-city text-danger"></i></div><span class="ms-2 me-5">Properties</span></a>
+                </div>
+                <div class="light align-items-center"><a href="./Motorsdarkafterlog.html"class=" text-uppercase fw-bold">dark mode</a></div>
+            </div>
+            <div class="down d-flex align-items-center justify-content-between">
+                <div class="d-flex flex-md-nowrap  flex-grow-1">
+                    <select class="d-none d-lg-block form-select me-2 w-25 h-30 ">
+                        <option selected>Choose Location</option>
+                        <option value="1">Cairo</option>
+                        <option value="2">Alexandria</option>
+                        <option value="3">Giza</option>
+                    </select>
+                    <div class="input-group mb-1 ">
+                        <input type="text" class="form-control" placeholder="Find Cars, Mobile Phones and more..."
+                            aria-label="" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-danger " type="button" id="button-addon2"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div class="d-flex flex-md-nowrap  align-items-center ">
+                        <a href="#" class="ms-3 text-decoration-none text-dark">English</a>
+                        <a href="#" class="ms-3 text-dark "><i class="fa-regular fa-message fs-5"></i></a>
+                        <a href="#" class="ms-3 text-dark "><i class="fa-regular fa-bell fs-4"></i></a>
+                        <div class="btn-group">
+                            <button class="ubtn dropdown-toggle border-0 ps-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="uimg" src="../img/about/team-1.jpg" width="40px" height="40px" alt="">
+                            </button>
+                            <ul class="dropdown-menu px-3 mydropdown mt-2">
+                                <li>
+                                    <div class=" text-center">
+                                        <div class="d-flex">
+                                        <div> <img src="../img/about/team-1.jpg" class="uimg mx-2" width="50px" height="50px" alt=""></div>
+                                        <div> <p class="mb-0 fs-5">Hello,</p>
+                                        <h4 id="userName">Name Name</h4>
+                                        </div>
+                                        </div>
+                                        <a href="../login/Profile.html"><button class=" btn btn-md  btn-outline-danger fw-bold"> View and edit your profile</button></a>
+                                    </div>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li class="fs-5 d-none d-md-flex">
+                                    <div>
+                                        <i class="fa-regular fa-newspaper me-1 mb-1"></i> <span>My ads</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-regular fa-heart  me-1 mb-1"></i><span>Favourites & Saved searches</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-regular fa-eye  me-1 mb-1"></i><span>Public Profile</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-regular fa-note-sticky  me-1 mb-1"></i><span>Buy Discounted Packages</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-regular fa-credit-card  me-1 mb-1"></i><span>Bought Packages & Billing</span>
+                                    </div>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li class="fs-5">
+                                    <div>
+                                        <i class="fa-brands fa-blogger  me-1 mb-1"></i><span>Blog</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-circle-question  me-1 mb-1"></i><span>Help</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-sliders  me-1 mb-1"></i><span>Settings</span>
+                                    </div>
+                                </li>
+                                <li><hr class="dropdown-divider  me-1 mb-1"></li>
+                                <li class="fs-5">
+                                    <div id="logoutLink">
+                                        <i class="fa-solid fa-arrow-right-from-bracket me-1 mb-1"></i><span>Logout</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="d-none d-lg-flex btn btn-lg px-4 ms-3 bg-danger text-light h-100 w-100">Sell</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- =========================================End header section======================================== -->
+    <!-- =========================================Start backimg  section======================================== -->
+    <div class="backimg">
+        <div class="backimgcon container px-5">
+<!-- الرأسية -->
+<div class="custom-header">
+<h3>Pick Your Next Car From Dubizzle!</h3>
+<p> Find New Cars for Sale in Egypt   </p>
+
+</div>
+
+<!-- الفورم -->
+<div class="containerform container">
+<form method="post">
+    <div class="row row-cols-md-2">
+    <!-- Dropdown 1: اختيار النوع -->
+    <div class="col">
+        <select class="form-select custom-select select-lg">
+            <option selected disabled>Search by Car Make or Model</option>
+            <option value="1">Mercedes</option>
+            <option value="2">Hyundai</option>
+            <option value="3">Kia</option>
+        </select>
+    </div>
+
+    <!-- Dropdown 2: ناقل الحركة -->
+    <div class="col">
+        <select class="form-select custom-select select-lg">
+            <option selected disabled> Price Range</option>
+            <option value="1"></option>
+            
+        </select>
+    </div>
+    </div>
+    <div class="row align-items-center py-3 pb-5">
+    <!-- Dropdown 3: اقتصاد الوقود -->
+    <div class="col-md-3">
+        <select class="form-select custom-select">
+            <option selected disabled>Transmission</option>
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+        </select>
+    </div>
+
+    <!-- Text input: البحث -->
+    <div class="col-md-3">
+        <select class="form-select custom-select">
+            <option selected disabled>Body Type</option>
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+        </select>
+    </div>
+
+    <!-- Dropdown 4: نطاق السعر -->
+    <div class="col-md-4">
+        <select class="form-select custom-select">
+            <option selected disabled> Fuel Economy</option>
+            <option value="1">  </option>
+            <option value="2"> </option>
+            <option value="3"> </option>
+        </select>
+    </div>
+
+
+    <!-- زر البحث -->
+    <div class="col-md-2">            
+        <button type="submit" class="btn btn-danger btn-lg ">Search</button>
+    </div>
+    </div>
+</form>
+</div>
+        </div>
+    </div>
+    <!-- =========================================End  backimg section======================================== -->
+
+<!-- =========================================start filter  backimg section======================================== -->
+<div class="container mt-4">
+    <div class="row">
+        <div class="col">
+            <button class="btn btnfiltercar  filter-btn" data-filter="make">Make</button>
+            <button class="btn btnfiltercar filter-btn" data-filter="bodytype">Body Type</button>
+            <button class="btn btnfiltercar filter-btn" data-filter="pricerange">Price Range</button>
+
+        </div>
+    </div>
+</div>
+<div class="make container mt-4">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-auto  gap-2 mb-2 ">
+                <div class="col">
+                    <div class="brandscar row p-2">
+                            <div class="col-4"><img src="../img/vs/brand/Mercedes_2x_9bf24df440.png" width="40px" height="40px" alt=""></div>
+                            <div class="col-8"><h6>Mercedes-Benz</h6></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="brandscar row p-2">
+                            <div class="col-4"><img src="../img/vs/brand/Mercedes_2x_9bf24df440.png" width="40px" height="40px" alt=""></div>
+                            <div class="col-8"><h6>Mercedes-Benz</h6></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="brandscar row p-2">
+                            <div class="col-4"><img src="../img/vs/brand/Mercedes_2x_9bf24df440.png" width="40px" height="40px" alt=""></div>
+                            <div class="col-8"><h6>Mercedes-Benz</h6></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="brandscar row p-2">
+                            <div class="col-4"><img src="../img/vs/brand/Mercedes_2x_9bf24df440.png" width="40px" height="40px" alt=""></div>
+                            <div class="col-8"><h6>Mercedes-Benz</h6></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="brandscar row p-2">
+                            <div class="col-4"><img src="../img/vs/brand/Mercedes_2x_9bf24df440.png" width="40px" height="40px" alt=""></div>
+                            <div class="col-8"><h6>Mercedes-Benz</h6></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-auto  gap-2 mb-2 ">
+                <div class="col">
+                    <div class="brandscar row p-2">
+                            <div class="col-4"><img src="../img/vs/brand/Mercedes_2x_9bf24df440.png" width="40px" height="40px" alt=""></div>
+                            <div class="col-8"><h6>Mercedes-Benz</h6></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="brandscar row p-2">
+                            <div class="col-4"><img src="../img/vs/brand/Mercedes_2x_9bf24df440.png" width="40px" height="40px" alt=""></div>
+                            <div class="col-8"><h6>Mercedes-Benz</h6></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="brandscar row p-2">
+                            <div class="col-4"><img src="../img/vs/brand/Mercedes_2x_9bf24df440.png" width="40px" height="40px" alt=""></div>
+                            <div class="col-8"><h6>Mercedes-Benz</h6></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="brandscar row p-2">
+                            <div class="col-4"><img src="../img/vs/brand/Mercedes_2x_9bf24df440.png" width="40px" height="40px" alt=""></div>
+                            <div class="col-8"><h6>Mercedes-Benz</h6></div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="brandscar row p-2">
+                            <div class="col-4"><img src="../img/vs/brand/Mercedes_2x_9bf24df440.png" width="40px" height="40px" alt=""></div>
+                            <div class="col-8"><h6>Mercedes-Benz</h6></div>
+                    </div>
+                </div>
+            </div>
+            
+            
+          
+          
+      </div> 
+   <div class="bodytype container mt-4 hidden">
+        <div class="row gap-2 mb-2 ">
+            <div class="col">
+                <div class="brandscar p-2">
+                        <div class="text-center"><img src="../img/vs/brand/sedan-car-model.svg" width="70px" height="60px" alt=""></div>
+                        <div class="text-center"><h6>Coupe</h6></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="brandscar p-2">
+                        <div class="text-center"><img src="../img/vs/brand/sedan-car-model.svg" width="70px" height="60px" alt=""></div>
+                        <div class="text-center"><h6>Coupe</h6></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="brandscar p-2">
+                        <div class="text-center"><img src="../img/vs/brand/sedan-car-model.svg" width="70px" height="60px" alt=""></div>
+                        <div class="text-center"><h6>Coupe</h6></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="brandscar p-2">
+                        <div class="text-center"><img src="../img/vs/brand/sedan-car-model.svg" width="70px" height="60px" alt=""></div>
+                        <div class="text-center"><h6>Coupe</h6></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="brandscar p-2">
+                        <div class="text-center"><img src="../img/vs/brand/sedan-car-model.svg" width="70px" height="60px" alt=""></div>
+                        <div class="text-center"><h6>Coupe</h6></div>
+                </div>
+            </div>
+            
+            
+        </div>
+        <div class="row gap-2 mb-2 ">
+            <div class="col">
+                <div class="brandscar p-2">
+                        <div class="text-center"><img src="../img/vs/brand/sedan-car-model.svg" width="70px" height="60px" alt=""></div>
+                        <div class="text-center"><h6>Coupe</h6></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="brandscar p-2">
+                        <div class="text-center"><img src="../img/vs/brand/sedan-car-model.svg" width="70px" height="60px" alt=""></div>
+                        <div class="text-center"><h6>Coupe</h6></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="brandscar p-2">
+                        <div class="text-center"><img src="../img/vs/brand/sedan-car-model.svg" width="70px" height="60px" alt=""></div>
+                        <div class="text-center"><h6>Coupe</h6></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="brandscar p-2">
+                        <div class="text-center"><img src="../img/vs/brand/sedan-car-model.svg" width="70px" height="60px" alt=""></div>
+                        <div class="text-center"><h6>Coupe</h6></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="brandscar p-2">
+                        <div class="text-center"><img src="../img/vs/brand/sedan-car-model.svg" width="70px" height="60px" alt=""></div>
+                        <div class="text-center"><h6>Coupe</h6></div>
+                </div>
+            </div>
+            
+            
+        </div>
+      
+        
+      </div>
+   <div class="pricerange container mt-4 hidden">
+        <div class="row gap-2 mb-2 ">
+            <div class="col">
+                <div class="brandscar p-3">
+                        <div class="text-center"><h6>Under 200,000</h6></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="brandscar p-3">
+                        <div class="text-center"><h6>Under 200,000</h6></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="brandscar p-3">
+                        <div class="text-center"><h6>Under 200,000</h6></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="brandscar p-3">
+                        <div class="text-center"><h6>Under 200,000</h6></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="brandscar p-3">
+                        <div class="text-center"><h6>Under 200,000</h6></div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="row gap-2 mb-2 ">
+            <div class="col">
+                <div class="brandscar p-3">
+                        <div class="text-center"><h6>Under 200,000</h6></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="brandscar p-3">
+                        <div class="text-center"><h6>Under 200,000</h6></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="brandscar p-3">
+                        <div class="text-center"><h6>Under 200,000</h6></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="brandscar p-3">
+                        <div class="text-center"><h6>Under 200,000</h6></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="brandscar p-3">
+                        <div class="text-center"><h6>Under 200,000</h6></div>
+                </div>
+            </div>
+            
+        </div>
+      </div>
+
+<!-- =========================================End  filter section======================================== -->
+
+
+    <!-- start cars -->
+
+<br>
+<br>
+    <div class="container">
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1">
+    
+            <div class="">
+                <div class="card mb-3 col1" >
+                    <div class="row g-0">
+                      <div class="col-md-2">
+                        <img src="../img/motors/Car_icon_alone.png" class="img-fluid rounded-start mt-3" alt="...">
+                      </div>
+                      <div class="col-md-10">
+                        <div class="card-body">
+                          <h5 class="card-title">Used Cars</h5>
+                          <p class="card-text">Find Your Dream car</p>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="">
+                <div class="card mb-3 col1" >
+                    <div class="row g-0">
+                      <div class="col-md-2">
+                        <img src="../img/motors/1926350-200.png" class="img-fluid rounded-start mt-2  " alt="...">
+                      </div>
+                      <div class="col-md-10">
+                        <div class="card-body">
+                          <h5 class="card-title">Car Coprasioin</h5>
+                          <p class="card-text">Compare Car Futechers </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="">
+                <div class="card mb-3 col1">
+                    <div class="row g-0">
+                      <div class="col-md-2">
+                        <img src="../img/motors/4829356-200.png" class="img-fluid rounded-start mt-2" alt="...">
+                      </div>
+                      <div class="col-md-10">
+                        <div class="card-body">
+                          <h5 class="card-title">Car Finance</h5>
+                          <p class="card-text">Apply For Car Finance</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+           
+    
+        </div>
+    </div>
+    <!-- =========================================Start View section======================================== -->
+    <div class="viewcon container my-5">
+
+        <!-- القسم: سيارات للبيع -->
+    <div class="floatb"><button class=" back-to-top btn btn-outline-danger fw-bold"> ↑ Back to top</button></div>
+    <div class="up d-flex justify-content-between mb-3">
+        <h4 class="category-title">Popular New Cars</h4>
+        <a class="text-danger " href="">View All</a>
+    </div>
+
+
+
+
+
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row row-cols-1 row-cols-xl-4  row-cols-lg-3 g-2 g-lg-3 row-cols-md-2 row-cols-sm-1 mb-5">
+                <div class="col">
+                    <a href="../singleproduct/singleproductafterlog.html"><div class="card bg-white p-0 ">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="">
+                        <div class="card-body px-3 py-4">
+                            <div class="price d-flex justify-content-between">
+                                <h5 class="card-title text-danger">EGP 1,300,000 – 1,650,000</h5>
+                            </div>
+                            <p>Toyota Corolla</p>
+                                <p class="text-secondary fs-6">1600 cc</p>
+                        </div>
+                    </div></a>
+                </div>
+                <div class="col">
+                    <a href="../singleproduct/singleproductafterlog.html"><div class="card bg-white p-0 ">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="">
+                        <div class="card-body px-3 py-4">
+                            <div class="price d-flex justify-content-between">
+                                <h5 class="card-title text-danger">EGP 1,300,000 – 1,650,000</h5>
+                            </div>
+                            <p>Toyota Corolla</p>
+                                <p class="text-secondary fs-6">1600 cc</p>
+                        </div>
+                    </div></a>
+                </div>
+                <div class="col">
+                    <a href="../singleproduct/singleproductafterlog.html"><div class="card bg-white p-0 ">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="">
+                        <div class="card-body px-3 py-4">
+                            <div class="price d-flex justify-content-between">
+                                <h5 class="card-title text-danger">EGP 1,300,000 – 1,650,000</h5>
+                            </div>
+                            <p>Toyota Corolla</p>
+                                <p class="text-secondary fs-6">1600 cc</p>
+                        </div>
+                    </div></a>
+                </div>
+                
+                <div class="col d-lg-none d-xl-block">
+                    <a href="../singleproduct/singleproductafterlog.html"><div class="card bg-white p-0 ">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="">
+                        <div class="card-body px-3 py-4">
+                            <div class="price d-flex justify-content-between">
+                                <h5 class="card-title text-danger">EGP 1,300,000 – 1,650,000</h5>
+                            </div>
+                            <p>Toyota Corolla</p>
+                                <p class="text-secondary fs-6">1600 cc</p>
+                        </div>
+                    </div></a>
+                </div>
+</div>
+          </div>
+          <div class="carousel-item">
+            <div class="row row-cols-1 row-cols-xl-4  row-cols-lg-3 g-2 g-lg-3 row-cols-md-2 row-cols-sm-1 mb-5">
+                <div class="col">
+                    <a href="../singleproduct/singleproductafterlog.html"><div class="card bg-white p-0 ">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="">
+                        <div class="card-body px-3 py-4">
+                            <div class="price d-flex justify-content-between">
+                                <h5 class="card-title text-danger">EGP 1,300,000 – 1,650,000</h5>
+                            </div>
+                            <p>Toyota Corolla</p>
+                                <p class="text-secondary fs-6">1600 cc</p>
+                        </div>
+                    </div></a>
+                </div>
+                <div class="col">
+                    <a href="../singleproduct/singleproductafterlog.html"><div class="card bg-white p-0 ">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="">
+                        <div class="card-body px-3 py-4">
+                            <div class="price d-flex justify-content-between">
+                                <h5 class="card-title text-danger">EGP 1,300,000 – 1,650,000</h5>
+                            </div>
+                            <p>Toyota Corolla</p>
+                                <p class="text-secondary fs-6">1600 cc</p>
+                        </div>
+                    </div></a>
+                </div>
+                <div class="col">
+                    <a href="../singleproduct/singleproductafterlog.html"><div class="card bg-white p-0 ">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="">
+                        <div class="card-body px-3 py-4">
+                            <div class="price d-flex justify-content-between">
+                                <h5 class="card-title text-danger">EGP 1,300,000 – 1,650,000</h5>
+                            </div>
+                            <p>Toyota Corolla</p>
+                                <p class="text-secondary fs-6">1600 cc</p>
+                        </div>
+                    </div></a>
+                </div>
+                
+                <div class="col d-lg-none d-xl-block">
+                    <a href="../singleproduct/singleproductafterlog.html"><div class="card bg-white p-0 ">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="">
+                        <div class="card-body px-3 py-4">
+                            <div class="price d-flex justify-content-between">
+                                <h5 class="card-title text-danger">EGP 1,300,000 – 1,650,000</h5>
+                            </div>
+                            <p>Toyota Corolla</p>
+                                <p class="text-secondary fs-6">1600 cc</p>
+                        </div>
+                    </div></a>
+                </div>
+</div>
+          </div>
+          <div class="carousel-item">
+            <div class="row row-cols-1 row-cols-xl-4  row-cols-lg-3 g-2 g-lg-3 row-cols-md-2 row-cols-sm-1 mb-5">
+                <div class="col">
+                    <a href="../singleproduct/singleproductafterlog.html"><div class="card bg-white p-0 ">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="">
+                        <div class="card-body px-3 py-4">
+                            <div class="price d-flex justify-content-between">
+                                <h5 class="card-title text-danger">EGP 1,300,000 – 1,650,000</h5>
+                            </div>
+                            <p>Toyota Corolla</p>
+                                <p class="text-secondary fs-6">1600 cc</p>
+                        </div>
+                    </div></a>
+                </div>
+                <div class="col">
+                    <a href="../singleproduct/singleproductafterlog.html"><div class="card bg-white p-0 ">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="">
+                        <div class="card-body px-3 py-4">
+                            <div class="price d-flex justify-content-between">
+                                <h5 class="card-title text-danger">EGP 1,300,000 – 1,650,000</h5>
+                            </div>
+                            <p>Toyota Corolla</p>
+                                <p class="text-secondary fs-6">1600 cc</p>
+                        </div>
+                    </div></a>
+                </div>
+                <div class="col">
+                    <a href="../singleproduct/singleproductafterlog.html"><div class="card bg-white p-0 ">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="">
+                        <div class="card-body px-3 py-4">
+                            <div class="price d-flex justify-content-between">
+                                <h5 class="card-title text-danger">EGP 1,300,000 – 1,650,000</h5>
+                            </div>
+                            <p>Toyota Corolla</p>
+                                <p class="text-secondary fs-6">1600 cc</p>
+                        </div>
+                    </div></a>
+                </div>
+                
+                <div class="col d-lg-none d-xl-block">
+                    <a href="../singleproduct/singleproductafterlog.html"><div class="card bg-white p-0 ">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="">
+                        <div class="card-body px-3 py-4">
+                            <div class="price d-flex justify-content-between">
+                                <h5 class="card-title text-danger">EGP 1,300,000 – 1,650,000</h5>
+                            </div>
+                            <p>Toyota Corolla</p>
+                                <p class="text-secondary fs-6">1600 cc</p>
+                        </div>
+                    </div></a>
+                </div>
+</div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+
+
+
+
+
+    
+    <div class="row row-cols-1 row-cols-xl-4  row-cols-lg-3 g-2 g-lg-3 row-cols-md-2 row-cols-sm-1 mb-5">
+                            <div class="col">
+                                <a href="../singleproduct/singleproductafterlog.html"><div class="card bg-white p-0 ">
+                                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="">
+                                    <div class="card-body px-3 py-4">
+                                        <div class="price d-flex justify-content-between">
+                                            <h5 class="card-title text-danger">EGP 1,300,000 – 1,650,000</h5>
+                                        </div>
+                                        <p>Toyota Corolla</p>
+                                            <p class="text-secondary fs-6">1600 cc</p>
+                                    </div>
+                                </div></a>
+                            </div>
+                            <div class="col">
+                                <a href="../singleproduct/singleproductafterlog.html"><div class="card bg-white p-0 ">
+                                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="">
+                                    <div class="card-body px-3 py-4">
+                                        <div class="price d-flex justify-content-between">
+                                            <h5 class="card-title text-danger">EGP 1,300,000 – 1,650,000</h5>
+                                        </div>
+                                        <p>Toyota Corolla</p>
+                                            <p class="text-secondary fs-6">1600 cc</p>
+                                    </div>
+                                </div></a>
+                            </div>
+                            <div class="col">
+                                <a href="../singleproduct/singleproductafterlog.html"><div class="card bg-white p-0 ">
+                                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="">
+                                    <div class="card-body px-3 py-4">
+                                        <div class="price d-flex justify-content-between">
+                                            <h5 class="card-title text-danger">EGP 1,300,000 – 1,650,000</h5>
+                                        </div>
+                                        <p>Toyota Corolla</p>
+                                            <p class="text-secondary fs-6">1600 cc</p>
+                                    </div>
+                                </div></a>
+                            </div>
+                            
+                            <div class="col d-lg-none d-xl-block">
+                                <a href="../singleproduct/singleproductafterlog.html"><div class="card bg-white p-0 ">
+                                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="">
+                                    <div class="card-body px-3 py-4">
+                                        <div class="price d-flex justify-content-between">
+                                            <h5 class="card-title text-danger">EGP 1,300,000 – 1,650,000</h5>
+                                        </div>
+                                        <p>Toyota Corolla</p>
+                                            <p class="text-secondary fs-6">1600 cc</p>
+                                    </div>
+                                </div></a>
+                            </div>
+    </div>
+    <div class="up d-flex justify-content-between mb-3">
+        <h4 class="category-title">Explore Toyota Cars</h4>
+        <a class="text-danger " href="">View All</a>
+    </div>
+    <div class="row row-cols-1 row-cols-xl-4  row-cols-lg-3 g-2 g-lg-3 row-cols-md-2 row-cols-sm-1 mb-5">
+                            <div class="col">
+                                <a href="../singleproduct/singleproductafterlog.html"><div class="card bg-white p-0 ">
+                                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="">
+                                    <div class="card-body px-3 py-4">
+                                        <div class="price d-flex justify-content-between">
+                                            <h5 class="card-title text-danger">EGP 1,300,000 – 1,650,000</h5>
+                                        </div>
+                                        <p>Toyota Corolla</p>
+                                            <p class="text-secondary fs-6">1600 cc</p>
+                                    </div>
+                                </div></a>
+                            </div>
+                            <div class="col">
+                                <a href="../singleproduct/singleproductafterlog.html"><div class="card bg-white p-0 ">
+                                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="">
+                                    <div class="card-body px-3 py-4">
+                                        <div class="price d-flex justify-content-between">
+                                            <h5 class="card-title text-danger">EGP 1,300,000 – 1,650,000</h5>
+                                        </div>
+                                        <p>Toyota Corolla</p>
+                                            <p class="text-secondary fs-6">1600 cc</p>
+                                    </div>
+                                </div></a>
+                            </div>
+                            <div class="col">
+                                <a href="../singleproduct/singleproductafterlog.html"><div class="card bg-white p-0 ">
+                                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="">
+                                    <div class="card-body px-3 py-4">
+                                        <div class="price d-flex justify-content-between">
+                                            <h5 class="card-title text-danger">EGP 1,300,000 – 1,650,000</h5>
+                                        </div>
+                                        <p>Toyota Corolla</p>
+                                            <p class="text-secondary fs-6">1600 cc</p>
+                                    </div>
+                                </div></a>
+                            </div>
+                            
+                            <div class="col d-lg-none d-xl-block">
+                                <a href="../singleproduct/singleproductafterlog.html"><div class="card bg-white p-0 ">
+                                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="">
+                                    <div class="card-body px-3 py-4">
+                                        <div class="price d-flex justify-content-between">
+                                            <h5 class="card-title text-danger">EGP 1,300,000 – 1,650,000</h5>
+                                        </div>
+                                        <p>Toyota Corolla</p>
+                                            <p class="text-secondary fs-6">1600 cc</p>
+                                    </div>
+                                </div></a>
+                            </div>
+    </div>
+    <div class="up d-flex justify-content-between mb-3">
+        <h4 class="category-title">Explore Honda Cars</h4>
+        <a class="text-danger " href="">View All</a>
+    </div>
+    <div class="row row-cols-1 row-cols-xl-4  row-cols-lg-3 g-2 g-lg-3 row-cols-md-2 row-cols-sm-1">
+                            <div class="col">
+                                <a href="../singleproduct/singleproductafterlog.html"><div class="card bg-white p-0 ">
+                                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="">
+                                    <div class="card-body px-3 py-4">
+                                        <div class="price d-flex justify-content-between">
+                                            <h5 class="card-title text-danger">EGP 1,300,000 – 1,650,000</h5>
+                                        </div>
+                                        <p>Toyota Corolla</p>
+                                            <p class="text-secondary fs-6">1600 cc</p>
+                                    </div>
+                                </div></a>
+                            </div>
+                            <div class="col">
+                                <a href="../singleproduct/singleproductafterlog.html"><div class="card bg-white p-0 ">
+                                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="">
+                                    <div class="card-body px-3 py-4">
+                                        <div class="price d-flex justify-content-between">
+                                            <h5 class="card-title text-danger">EGP 1,300,000 – 1,650,000</h5>
+                                        </div>
+                                        <p>Toyota Corolla</p>
+                                            <p class="text-secondary fs-6">1600 cc</p>
+                                    </div>
+                                </div></a>
+                            </div>
+                            <div class="col">
+                                <a href="../singleproduct/singleproductafterlog.html"><div class="card bg-white p-0 ">
+                                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="">
+                                    <div class="card-body px-3 py-4">
+                                        <div class="price d-flex justify-content-between">
+                                            <h5 class="card-title text-danger">EGP 1,300,000 – 1,650,000</h5>
+                                        </div>
+                                        <p>Toyota Corolla</p>
+                                            <p class="text-secondary fs-6">1600 cc</p>
+                                    </div>
+                                </div></a>
+                            </div>
+                            
+                            <div class="col d-lg-none d-xl-block">
+                                <a href="../singleproduct/singleproductafterlog.html"><div class="card bg-white p-0 ">
+                                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="">
+                                    <div class="card-body px-3 py-4">
+                                        <div class="price d-flex justify-content-between">
+                                            <h5 class="card-title text-danger">EGP 1,300,000 – 1,650,000</h5>
+                                        </div>
+                                        <p>Toyota Corolla</p>
+                                            <p class="text-secondary fs-6">1600 cc</p>
+                                    </div>
+                                </div></a>
+                            </div>
+    </div>
+    </div>
+            </div>        
+        </div>
+        <div class="newscarcon container">
+            <div class="up d-flex justify-content-between mb-3">
+                <h4 class="category-title">Cars for Sale</h4>
+                <a class="text-danger " href="">View more</a>
+            </div>
+        <div class="row gap-3 ">
+            <div class="col">
+                <div class="card bg-white p-0 ">
+                    <img src="../img/motors/Car-Maintenance-Guide-in-Cold-Weather-1-1024x684.png" class="card-img-top" alt="">
+                    <div class="card-body px-3 py-4">
+                        <div class="price d-flex justify-content-between">
+                            <h5 class="card-title ">Car Mainteance Guide in cloud Weather </h5>
+                        </div>
+                        
+                        <p class="text-secondary fs-6">Winter can pring server challang for car owners,</p>
+                        <p class="text-secondary fs-6">espesaly in are-esa where temputer</p>
+                        <div class="flex flexYcenter u-spbwx8"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> <span>Dec 7, 2024</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="card bg-white p-0 ">
+                        <img src="../img/motors/466868797_1081772063958191_2932635789194443047_n-1024x576.jpg" class="card-img-top" alt="">
+                        <div class="card-body px-3 py-4">
+                            <div class="price d-flex justify-content-between">
+                                <h5 class="card-title">Assemply of Proton Saga in Egypt</h5>
+                            </div>
+                            
+                            <p class="text-secondary fs-6">Egypt automitive </p>
+                            <p class="text-secondary fs-6">ment:The porton saga,Malyaseas beloved compact</p>
+                            <div class="flex flexYcenter u-spbwx8"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> <span>Dec 7, 2024</span></div>
+
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="card bg-white p-0 " style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="../img/motors/mobile-300x200.png" class=" img-fluid rounded-start w-100 h-100" alt="...">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Guide to by your new car..</h5>
+                              <p>Bynig a new car is big decision that re- quries cerful plannig and researsh</p>
+
+                              
+                              
+                              <div class="flex flexYcenter u-spbwx8"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> <span>Dec 7, 2024</span></div>
+
+                           
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="card bg-white p-0 " style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="../img/motors/mobile-2-300x200.png" class="img-fluid rounded-start w-100 h-100" alt="...">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Car Mainteance Guid</h5>
+                              <p class="card-text mb-0">Keeping your car runnig soomthly is es-Sentail for safety ,effince</p>
+                              
+                              <div class="flex flexYcenter u-spbwx8"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> <span>Dec 7, 2024</span></div>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="card bg-white p-0 " style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="../img/motors/mobile-3-300x200.png" class="img-fluid rounded-start w-100 h-100" alt="...">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Car Finance  in Egypt</h5>
+                              <p class="card-text">Byning a car is a significant investment,and for many pepole..</p>
+                              <div class="flex flexYcenter u-spbwx8"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> <span>Dec 7, 2024</span></div>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="card bg-white p-0 " style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="../img/motors/Safe-driving-tips-in-Autumn_-1-300x200.png" class="img-fluid rounded-start h-100 w-100" alt="...">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Tips To Protect Your car</h5>
+                              <p class="card-text">End of summer we will revisit some safe diving tips...</p>
+                              <div class="flex flexYcenter u-spbwx8"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> <span>Dec 7, 2024</span></div>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+<br>
+
+
+
+
+
+
+
+
+
+
+    
+    <!-- =========================================End View section======================================== -->
+    <!-- =========================================End View section======================================== -->
+        <div class="wherecon container">
+        <div>
+            <h4 class="mb-5">Hyundai Elantra 2024 FAQs</h4>
+        </div>
+        <div class="row mb-3">
+            <div class="col"><a class=" text-secondary  " href="">Hyundai Elantra in Cairo</a></div>
+            <div class="col"><a class=" text-secondary  "  href="">Hyundai Elantra in Ismailia</a></div>
+            <div class="col"><a class=" text-secondary  "  href="">Hyundai Elantra in Fayoum</a></div>
+            <div class="col"><a class=" text-secondary  "  href="">Hyundai Elantra in Giza</a></div>
+            
+        </div>
+        <div class="row mb-3">
+            <div class="col"><a class=" text-secondary  "  href="">Hyundai Elantra in Damietta</a></div>
+            <div class="col"><a class=" text-secondary  "  href="">Hyundai Elantra in Alexandria</a></div>
+            <div class="col"><a class=" text-secondary  "  href="">Hyundai Elantra in Minya</a></div>
+            <div class="col"><a class=" text-secondary  "  href="">Hyundai Elantra in Qena</a></div>
+        </div>
+        <div class="row mb-3">
+            <div class="col"><a class=" text-secondary  "  href="">Hyundai Elantra in Port Said</a></div>
+            <div class="col"><a class=" text-secondary  "  href="">Hyundai Elantra in Luxor</a></div>
+        </div>
+        </div>
+    <!-- =========================================End View section======================================== -->
+    <!-- =========================================End View section======================================== -->
+    <footer class="footer text-center ">
+        <div class="footarcon container">
+            <div class="d-flex justify-content-between">
+                <div class="row-cols text-start align-content-center">
+                    
+                        <h5 class="fw-bold ">Find amazing deals on the go.</h5>
+                    <h5 class="text-danger fw-bold">Download the app now!</h5>
+                    
+                </div>
+                <div class="row">
+                    <div class="col-2 align-content-end">
+                        <img src="../img/brandMobileApp.0053aa25c45ccb88f3056b71272aab15.webp" width="140px" height="140px" alt="">
+                    </div>
+                </div>
+                <div class="row align-content-center">
+                    <div class="col ">
+                        <img src="../img/iconGooglePlayEN_noinline.9892833785b26dd5896b7c70b089f684.svg" width="120px" height="120px" alt="">
+                    </div>
+                    <div class="col">
+                        <img src="../img/iconAppStoreEN_noinline.a731d99c8218d6faa0e83a6d038d08e8.svg" width="120px" height="120px" alt="">
+                    </div>
+                    <div class="col">
+                        <img src="../img/iconAppGallery_noinline.6092a9d739c77147c884f1f7ab3f1771.svg" width="120px" height="120px" alt="">
+                    </div>
+                </div>
+            </div>
+            <hr class=" m-0">
+            <div class="row">
+                <div class="col text-start">
+                    <h6 class=" my-3 text-uppercase fw-bold">About Us</h6>
+                    <ul class=" list-unstyled text-secondary">
+                        <li><a class="text-secondary " href="../about/homeabout.html">About Dubizzle Group</a></li>
+                        <li><a class="text-secondary" href="">Careers</a></li>
+                        <li><a class="text-secondary" href="">Contact Us</a></li>
+                        <li><a class="text-secondary" href="">Dubizzle for Businesses</a></li>
+                    </ul>
+                </div>
+                <div class="col text-start ms-3">
+                    <h6 class=" my-3 text-uppercase fw-bold">Dubizzle</h6>
+                    <ul class=" list-unstyled text-secondary">
+                        <li><a class="text-secondary" href="">Blog</a></li>
+                        <li><a class="text-secondary" href="">Help</a></li>
+                        <li><a class="text-secondary" href="">Sitemap</a></li>
+                        <li><a class="text-secondary" href="">Terms of use</a></li>
+                        <li><a class="text-secondary" href="">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col text-start">
+                    <h6 class=" my-3 text-uppercase fw-bold">Countries</h6>
+                    <ul class=" list-unstyled text-secondary">
+                        <li><a class="text-secondary" href="">Bahrain</a></li>
+                        <li><a class="text-secondary" href="">Jordan</a></li>
+                        <li><a class="text-secondary" href="">Kuwait</a></li>
+                        <li><a class="text-secondary" href="">Lebanon</a></li>
+                        <li><a class="text-secondary" href="">Oman</a></li>
+                    </ul>
+                </div>
+                <div class="col text-center ">
+                    <h6 class=" my-3 text-uppercase fw-bold">Follow us</h6>
+                    <ul class=" list-unstyled text-secondary text-center d-flex justify-content-around">
+                        <li><a class="text-danger fs-3 " href=""><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a class="text-danger fs-3" href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a class="text-danger fs-3" href=""><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a class="text-danger fs-3" href=""><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a class="text-danger fs-3" href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                    <ul class=" list-unstyled text-secondary text-center d-flex justify-content-around">
+                        <li class="me-3"><a class="text-danger fs-3" href=""><img src="../img/iconGooglePlayEN_noinline.9892833785b26dd5896b7c70b089f684.svg" width="90px" height="90px" alt=""></a></li>
+                        <li class="me-3"><a class="text-danger fs-3" href=""><img src="../img/iconAppGallery_noinline.6092a9d739c77147c884f1f7ab3f1771.svg" width="90px" height="90px" alt=""></a></li>
+                        <li><a class="text-danger fs-3" href=""><img src="../img/iconAppStoreEN_noinline.a731d99c8218d6faa0e83a6d038d08e8.svg" width="90px" height="90px" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <h6 align="center">&copy; 2024 All Rights Reserved By my team1</h6>
+        </div>
+    </footer>
+
+    
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/javascript.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        function showProfileName() {
+            let name = localStorage.getItem('name');
+            if (name) {
+                document.getElementById('userName').innerText = name;
+            }
+        }
+        
+        window.onload = showProfileName;
+        function logout() {
+            if (confirm("Are you sure you want to log out?")) {
+                window.location.href = "../index.html"; 
+            }
+        }
+        
+        document.getElementById('logoutLink').addEventListener('click', logout);
+        </script>
+        
+</body>
+</body>
+
+</html>

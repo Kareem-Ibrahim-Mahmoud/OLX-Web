@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile dark</title>
+    <link rel="stylesheet" href="../css/all.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/styled.css">
+    <style>
+        *{
+            flex-wrap: wrap;
+        }
+        .hidden {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body class="bg-dark">
+    <!-- =========================================Start header section======================================== -->
+    <header class="header  py-3 position-sticky top-0 bg-dark">
+        <div class="headercon container">
+            <div class="up d-flex align-items-center mb-3">
+                <div>
+                    <a href="../indexafterlogdark.html" class=" logo text-decoration-none pe-5"><img src="../img/about/footer/footer-white-fixed-logo-dubizzle.png" alt=""></a>
+                </div>
+                <div class=" d-none d-md-flex align-items-center">
+                    <div class="icon"><a href="../motors/Motorsdarkafterlog.html"><i class="fa-solid fa-car text-danger"></i></div> <span class="ms-2 me-5 ">Motors</span></a>
+                </div>
+                <div class=" d-none  d-md-flex  align-items-center">
+                    <div class="icon"><a href=""><i class="fa-solid fa-city text-danger"></i></div><span class="ms-2 me-5">Properties</span></a>
+                </div>
+                <div class="light align-items-center"><a href="./Profile.html"class=" text-uppercase fw-bold">light mode</a></div>
+            </div>
+            <div class="down d-flex align-items-center justify-content-between">
+                <div class="d-flex flex-md-nowrap  flex-grow-1">
+                    <select class="d-none d-lg-block form-select me-2 w-25 h-30 ">
+                        <option selected>Choose Location</option>
+                        <option value="1">Cairo</option>
+                        <option value="2">Alexandria</option>
+                        <option value="3">Giza</option>
+                    </select>
+                    <div class="input-group mb-1 ">
+                        <input type="text" class="form-control" placeholder="Find Cars, Mobile Phones and more..."
+                            aria-label="" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-danger " type="button" id="button-addon2"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div class="d-flex flex-md-nowrap  align-items-center ">
+                        <a href="#" class="ms-3 text-decoration-none text-light">English</a>
+                        <a href="#" class="ms-3 text-dark "><i class="fa-regular fa-message fs-5  text-light"></i></a>
+                        <a href="#" class="ms-3 text-dark "><i class="fa-regular fa-bell fs-4 text-light"></i></a>
+                        <div class="btn-group">
+                            <button class="ubtn dropdown-toggle border-0 ps-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="uimg" src="../img/about/team-1.jpg" width="40px" height="40px" alt="">
+                            </button>
+                            <ul class="dropdown-menu px-3 mydropdown mt-2">
+                                <li>
+                                    <div class=" text-center">
+                                        <div class="d-flex">
+                                        <div> <img src="../img/about/team-1.jpg" class="uimg mx-2" width="50px" height="50px" alt=""></div>
+                                        <div> <p class="mb-0 fs-5">Hello,</p>
+                                        <h4 id="userName">Name Name</h4>
+                                        </div>
+                                        </div>
+                                        <a href="../login/Profiledark.html"><button class=" btn btn-md  btn-outline-danger fw-bold"> View and edit your profile</button></a>
+                                    </div>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li class="fs-5 d-none d-md-flex">
+                                    <div>
+                                        <i class="fa-regular fa-newspaper me-1 mb-1"></i> <span>My ads</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-regular fa-heart  me-1 mb-1"></i><span>Favourites & Saved searches</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-regular fa-eye  me-1 mb-1"></i><span>Public Profile</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-regular fa-note-sticky  me-1 mb-1"></i><span>Buy Discounted Packages</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-regular fa-credit-card  me-1 mb-1"></i><span>Bought Packages & Billing</span>
+                                    </div>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li class="fs-5">
+                                    <div>
+                                        <i class="fa-brands fa-blogger  me-1 mb-1"></i><span>Blog</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-circle-question  me-1 mb-1"></i><span>Help</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-sliders  me-1 mb-1"></i><span>Settings</span>
+                                    </div>
+                                </li>
+                                <li><hr class="dropdown-divider  me-1 mb-1"></li>
+                                <li class="fs-5">
+                                    <div id="logoutLink">
+                                        <i class="fa-solid fa-arrow-right-from-bracket me-1 mb-1"></i><span>Logout</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="d-none d-lg-flex btn btn-lg px-4 ms-3 bg-danger text-light h-100 w-100">Sell</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- =========================================End header section======================================== -->
+    <!-- =========================================Start carousel section======================================== -->
+    <div class="formcont container p-5  text-light">
+        <div>
+            <h5>Edit profile</h5> <hr>
+        </div>
+        <form>
+        <div class="row mb-3">
+            <div class="col w-50">
+                
+                    <div class="mb-3">
+                      <label for="exampleInputText1" class="form-label fw-bold">Name</label>
+                      <input type="text" class="form-control" placeholder="Name" id="exampleInputName1" aria-describedby="textHelp">
+                      
+                    </div>
+                    <div class="mb-3">
+                      <label for="date" class="form-label fw-bold">Date of birth</label>
+                      <div class="row">
+                        <div class="col">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>DD</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                              </select>
+                        </div>
+                        <div class="col">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>MM</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                              </select>
+                        </div>
+                        <div class="col">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>YYYY</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                              </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mb-5">
+                      <label for="date" class="form-label fw-bold">Gender</label>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Select your gender</option>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                        <option value="3">Prefer not to say</option>
+                      </select>
+                      </div>
+                      <div class="mb-3">
+                        <textarea class="form-control" placeholder="About me (optional)" maxlength="200" id="exampleFormControlTextarea1" rows="6"></textarea>
+                      </div>
+                  
+            </div>
+            <div class="col  d-none d-md-flex w-50">
+                <div class="alert myalert" role="alert">
+                    <div class="d-flex "><i class="fa-regular fa-lightbulb fs-5 text-danger"></i><h5 class="ms-3"> Why is it important?</h5></div>
+                    <p>Dubizzle is built on trust. Help other people get to know you. Tell them about the things you like. Share your favorite brands, books, movies, shows, music, food. And you will see the results…</p>
+                  </div>
+            </div>
+        </div> <hr>
+        <div class="row mb-4">
+            <div class="pe-5 ">
+                <label for="no" class="form-label fw-bold">Contact information</label>
+            <div class="input-group flex-nowrap mb-3">
+                <span class="input-group-text" id="addon-wrapping">@</span>
+                <input type="text" class="form-control me-3" placeholder="Phone number" id="no" aria-label="no" aria-describedby="addon-wrapping"> <span class="d-none d-lg-flex">This is the number for buyers contacts, reminders, and other notifications.</span>
+            </div>
+            </div>
+            <div class="input-group flex-nowrap">
+             
+                <input type="email" class="form-control me-3 w-50" placeholder="email" id="exampleInputEmail1" aria-label="email" aria-describedby="addon-wrapping"> 
+            </div>
+            
+        </div>
+        <hr>
+        <div class="row">
+            <h5>Optional information</h5>
+            <div class="row mt-2">
+                <div class="col w-50">
+                    <h6 class="mb-0">Facebook</h6> <p> Sign in with Facebook and discover your trusted connections to buyers</p>
+                </div>
+                <div class="col  d-none d-sm-flex w-50">
+                    <button class=" btn btn-lg  btn-outline-danger fw-bold  px-5 py-3 ms-5 mb-4"> Connect</button>
+
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col w-50">
+                    <h6 class="mb-0">Google</h6> <p>Connect your Dubizzle account to your Google account for simplicity and ease
+                    </p>
+                </div>
+                <div class="col  d-none d-sm-flex w-50">
+                    <button class=" btn btn-lg  btn-outline-danger fw-bold px-5 py-3 ms-5"> Disconnect</button>
+
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="up d-flex justify-content-between mb-3 pt-4">
+                    <a class=" text-decoration-underline fw-bold " href="">Discard </a>
+                    <button type="submit" class="btn btn-lg px-4 ms-3 bg-danger text-light d-none d-md-block">Save changes</button>
+
+
+                </div>
+            </div>
+
+        </div>
+    </form>
+    </div>
+    <!-- =========================================End carousel section======================================== -->
+    <!-- =========================================Start Popular Categories section======================================== -->
+    <div class="formcont container p-5 mt-5 mb-4 text-light">
+        <div>
+            <h5>Delete this account</h5> <hr>
+            <h5>Are you sure you want to delete your account?</h5>
+            <p>Fill the form and your request will be directed to our Customer Support Team</p>
+            <a class="text-decoration-underline fw-bold" id="deleteAccountLink" href="javascript:void(0);">Submit request</a>
+        </div>
+        
+    </div>
+    <!-- =========================================End Popular Categories section======================================== -->
+    <!-- =========================================Start View section======================================== -->
+    
+    <!-- =========================================End View section======================================== -->
+    <footer class="footer text-center ">
+        <div class="footarcon container">
+            <div class="d-flex justify-content-between">
+                <div class="row-cols text-start align-content-center">
+                    
+                        <h5 class="fw-bold ">Find amazing deals on the go.</h5>
+                    <h5 class="text-danger fw-bold">Download the app now!</h5>
+                    
+                </div>
+                <div class="row">
+                    <div class="col-2 align-content-end">
+                        <img src="../img/brandMobileApp.0053aa25c45ccb88f3056b71272aab15.webp" width="140px" height="140px" alt="">
+                    </div>
+                </div>
+                <div class="row align-content-center">
+                    <div class="col ">
+                        <img src="../img/iconGooglePlayEN_noinline.9892833785b26dd5896b7c70b089f684.svg" width="120px" height="120px" alt="">
+                    </div>
+                    <div class="col">
+                        <img src="../img/iconAppStoreEN_noinline.a731d99c8218d6faa0e83a6d038d08e8.svg" width="120px" height="120px" alt="">
+                    </div>
+                    <div class="col">
+                        <img src="../img/iconAppGallery_noinline.6092a9d739c77147c884f1f7ab3f1771.svg" width="120px" height="120px" alt="">
+                    </div>
+                </div>
+            </div>
+            <hr class=" m-0">
+            <div class="row">
+                <div class="col text-start">
+                    <h6 class=" my-3 text-uppercase fw-bold">About Us</h6>
+                    <ul class=" list-unstyled text-secondary">
+                        <li><a class="text-secondary " href="../about/homeabout.html">About Dubizzle Group</a></li>
+                        <li><a class="text-secondary" href="">Careers</a></li>
+                        <li><a class="text-secondary" href="">Contact Us</a></li>
+                        <li><a class="text-secondary" href="">Dubizzle for Businesses</a></li>
+                    </ul>
+                </div>
+                <div class="col text-start ms-3">
+                    <h6 class=" my-3 text-uppercase fw-bold">Dubizzle</h6>
+                    <ul class=" list-unstyled text-secondary">
+                        <li><a class="text-secondary" href="">Blog</a></li>
+                        <li><a class="text-secondary" href="">Help</a></li>
+                        <li><a class="text-secondary" href="">Sitemap</a></li>
+                        <li><a class="text-secondary" href="">Terms of use</a></li>
+                        <li><a class="text-secondary" href="">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col text-start">
+                    <h6 class=" my-3 text-uppercase fw-bold">Countries</h6>
+                    <ul class=" list-unstyled text-secondary">
+                        <li><a class="text-secondary" href="">Bahrain</a></li>
+                        <li><a class="text-secondary" href="">Jordan</a></li>
+                        <li><a class="text-secondary" href="">Kuwait</a></li>
+                        <li><a class="text-secondary" href="">Lebanon</a></li>
+                        <li><a class="text-secondary" href="">Oman</a></li>
+                    </ul>
+                </div>
+                <div class="col text-center ">
+                    <h6 class=" my-3 text-uppercase fw-bold">Follow us</h6>
+                    <ul class=" list-unstyled text-secondary text-center d-flex justify-content-around">
+                        <li><a class="text-danger fs-3 " href=""><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a class="text-danger fs-3" href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a class="text-danger fs-3" href=""><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a class="text-danger fs-3" href=""><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a class="text-danger fs-3" href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                    <ul class=" list-unstyled text-secondary text-center d-flex justify-content-around">
+                        <li class="me-3"><a class="text-danger fs-3" href=""><img src="../img/iconGooglePlayEN_noinline.9892833785b26dd5896b7c70b089f684.svg" width="90px" height="90px" alt=""></a></li>
+                        <li class="me-3"><a class="text-danger fs-3" href=""><img src="../img/iconAppGallery_noinline.6092a9d739c77147c884f1f7ab3f1771.svg" width="90px" height="90px" alt=""></a></li>
+                        <li><a class="text-danger fs-3" href=""><img src="../img/iconAppStoreEN_noinline.a731d99c8218d6faa0e83a6d038d08e8.svg" width="90px" height="90px" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <h6 align="center">&copy; 2024 All Rights Reserved By my team1</h6>
+        </div>
+    </footer>
+
+    
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/javascript.js"></script>
+    <script>
+        function showProfileData() {
+            let name = localStorage.getItem('name');
+            let email = localStorage.getItem('email');
+            if (name && email) {
+                document.getElementById('exampleInputName1').value = name;
+                document.getElementById('exampleInputEmail1').value = email;
+                document.getElementById('userName').innerText = name; 
+            }
+        }
+        
+        window.onload = showProfileData;
+        function deleteAccount() {
+            if (confirm("Are you sure you want to delete your account? This action cannot be undone.")) {
+                localStorage.removeItem('name');
+                localStorage.removeItem('email');
+                localStorage.removeItem('password');
+                localStorage.removeItem('users'); 
+        
+                window.location.href = "../darkone.html"; 
+            }
+        }
+        
+        document.getElementById('deleteAccountLink').addEventListener('click', deleteAccount);
+
+        function logout() {
+            if (confirm("Are you sure you want to log out?")) {
+                window.location.href = "../darkone.html"; 
+            }
+        }
+        
+        document.getElementById('logoutLink').addEventListener('click', logout);
+        </script>
+
+</body>
+
+
+</html>

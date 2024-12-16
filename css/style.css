@@ -1,0 +1,626 @@
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+/* =========================================Start header style======================================== */
+header{
+    z-index: 99999;
+    background-color: #ffffff;
+}
+header .icon{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #fef5f5;
+    text-align: center;
+    padding-top: 5%;
+}
+header .icon:hover{
+    background-color: #FBE0E0;
+}
+header span:hover{
+    text-decoration: underline;
+}
+
+.headervs{
+    position: sticky;
+    top: 0;
+}
+.uimg{
+    border-radius: 50%;
+}
+.ubtn{
+    background-color: transparent;
+}
+.mydropdown{
+    width: 350px;
+}
+@media(max-width: 576px){
+    .mydropdown{
+        width: 250px;
+    }
+}
+/* =========================================End header style======================================== */
+/* =========================================Start navbar style======================================== */
+.navbarf{
+    max-height: 50px;
+}
+#subul{
+    opacity: 0;
+    padding: 37px;
+    visibility: hidden;
+    z-index: 1;
+    background-color: #ffffff;
+    width: 150px;
+    list-style: none;
+    box-shadow: .5px .5px 1px .5px rgba(220, 220, 220, 0.767);
+}
+#subul li{
+    padding-bottom: 3px;
+}
+#subul li a{
+    width: 100%;
+}
+.dropdown:hover #subul{
+    opacity: 1;
+    visibility: visible;
+}
+#subul li:hover{
+    background-color: gainsboro;
+}
+@media(max-width: 1286px) {
+    .lasto2 {
+        display: none;
+    }
+}
+@media(max-width: 1166px) {
+    .lasto1 {
+        display: none;
+    }
+}
+/* =========================================End navbar style======================================== */
+/* =========================================Start category style======================================== */
+.viewcon .floatb{
+    border-radius: 5px;
+    position: fixed;
+    top: 160px;
+    left: 45%;
+    z-index: 5555;
+    background-color: #ffffff;
+    /* opacity: 0; */
+}
+
+/* @media(min-width: 1200px){
+    .viewcon .floatb{
+        top: 200px;
+        left: 43%;
+    }
+    
+} */
+@media(max-width: 1900px){
+    .viewcon .floatb{
+        top: 205px;
+        left: 43%;
+    }
+    
+}
+@media(max-width: 1200px){
+    .viewcon .floatb{
+        top: 200px;
+        left: 43%;
+    }
+    
+}
+@media(max-width: 992px){
+    .viewcon .floatb{
+        top: 180px;
+        left: 43%;
+    }
+    
+}
+
+@media(max-width: 768px){
+    .viewcon .floatb{
+        top: 200px;
+        left: 40%;
+    }
+    
+}
+@media(max-width: 576px){
+    .viewcon .floatb{
+        top: 200px;
+        left: 36%;
+    }
+    
+}
+.viewcon .back-to-top{
+    display:none;  
+}
+/* =========================================End category style======================================== */
+/* =========================================Start footer style======================================== */
+footer {
+    background-color: #F6F6F6; 
+    padding: 30px 0 10px 0;
+}
+/* =========================================End footer style======================================== */
+/* =========================================Start login style======================================== */
+.login-container {
+    color: #ffffffe5;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.logo img {
+    width: 100px;
+}
+.btn-google,
+.btn-facebook {
+    background-color: #ba0000;
+    border:1px solid #fff;
+    color: #fff;
+}
+.btn-google:hover ,
+.btn-facebook:hover {
+    background-color: transparent;
+    border:1px solid #fff;
+    color: #fff;
+}
+ 
+.divider {
+    text-align: center;
+    margin: 20px 0;
+}
+.bglogin{
+    background-image: url(../img/login/motors-banner-new[1].png);
+    background-color: #9615156c;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+/* =========================================End login style======================================== */
+
+
+/* =========================================Start about style======================================== */
+.mainabouthm{
+    background-image: url(https://cdn.empgroup.com/wp-content/uploads/2023/04/investor_relation_office.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 550px;
+}
+.p1about{
+    text-shadow: 2px 2px 4px #000000;
+    padding-top:20%;
+    font-size: 45px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+@media(max-width: 584px){
+    .p1about{
+        font-size: 35px
+    }
+    .p2about{
+        padding-top:20%;
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+    .p3about{
+        font-size: 35px;
+        font-weight: 400;
+    }
+    .p4about{
+        font-size: 40px;
+        font-weight: 400;
+    }
+    .p5about{
+        font-size: 30px;
+        font-weight: 400;
+    }
+}
+.p2about{
+    padding-top:20%;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.p3about{
+    font-size: 45px;
+    font-weight: 400;
+}
+.p4about{
+    font-size: 50px;
+    font-weight: 400;
+}
+.p5about{
+    font-size: 40px;
+    font-weight: 400;
+}
+.footarconab img{
+    scale: .4;
+}
+
+
+.mainabout{
+    background-image:url(https://cdn.empgroup.com/wp-content/uploads/2023/04/About-Us-New-Apr14-scaled.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 500px;
+}
+.maininvestor{
+    background-image:url(https://cdn.empgroup.com/wp-content/uploads/2023/04/investor_relation_office.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 500px;
+}
+.hostcon img{
+    border-radius: 50%;
+}
+
+/* =========================================End about style======================================== */
+
+/* =========================================Start category style======================================== */
+/* =========================================End category style======================================== */
+
+/* =========================================Start single style======================================== */
+.imgd{
+    position: absolute;
+    bottom: -80px;
+}
+/* إعداد الحاوية */
+
+.tabs {
+    margin-top: auto;
+    margin-left: auto;
+}
+
+.tabs {
+    display: flex
+;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 5px;
+    width: fit-content;
+    flex-wrap: nowrap;
+}
+  /* تصميم الأزرار */
+  .tab {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #333;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  /* الزر النشط */
+  .tab.active {
+    background-color: #f44336; /* اللون الأحمر */
+    color: white;
+  }
+  .carousel-indicators img{
+    width:70px;
+    height: 50px;
+    display: block;
+}
+.carousel-indicators button{
+    width: max-content!important;
+}
+.carousel-indicators{
+    position: unset;
+}
+.bg{
+    background-color:#fbfcfd;
+}
+.showmycar{
+    height: 350px;
+}
+.detailsincomparison{
+    border: 1px solid #ebeeef;
+    box-shadow: 0 .5px 8px transparent;
+    border-radius: 5px;
+}
+.add{
+    background-color: #ba0000;
+    padding: 1px;
+    border-radius: 50%;
+}
+.carousel-indicators img{
+    width: 70px;
+    display: block;
+}
+.carousel-indicators button{
+    width: max-content!important;
+}
+.block{
+    background-color: #ffffff;
+    border: 1px solid #ebeeef;
+    min-height: 100px;
+    margin: 10px;
+    padding: 10px;
+    
+}
+.card-img-top{
+    height: 200px;
+}
+
+
+/* =========================================End single style======================================== */
+/* =========================================start add style======================================== */
+
+.list{
+    margin-top: 50px;
+}
+.sidcard{
+    padding: 82px;
+    background-color: #d3d3d3;
+    height: 98%;
+    position: relative;
+}
+.sidcard h1{
+    color: #DC3545;
+    font-weight: 500;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+}
+.sidcard .checkOut{
+    position: absolute;
+    bottom: 0;
+}
+.sidcard .checkOut div{
+    background-color: #DC3545;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.detailsincomparison {
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    background-color: #fff; 
+    padding: 20px;
+    margin-bottom: 15px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.detailsincomparison:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+}
+
+.detailsincomparison h5 {
+    font-size: 1.2rem; 
+    font-weight: bold; 
+    color: #333; 
+}
+
+.detailsincomparison .d-flex span {
+    margin-left: 8px; 
+    color: #666; 
+    font-size: 0.9rem; 
+}
+
+.detailsincomparison button {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd; 
+    border-radius: 20px; 
+    padding: 5px 15px; 
+    color: #dc3545; 
+    font-size: 0.9rem; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.detailsincomparison button:hover {
+    background-color: #e26975;
+    color: #fff; 
+}
+
+.listCard {
+    list-style-type: none; 
+    padding: 0;
+}
+
+.listCard li {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 40px;
+    background-color: #f9f9f9; 
+    border-radius: 6px; 
+    border: 1px solid #ddd; 
+}
+
+.listCard li button {
+    background: none; 
+    border: none; 
+    color: red; 
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+/* =========================================End add style======================================== */
+/* =========================================start re style======================================== */
+.formcont{
+    border: .5px solid #CCD5D6;
+    border-radius: 5px;
+}
+.myalert{
+    border: .5px solid #CCD5D6;
+}
+/* =========================================End re style======================================== */
+/* =========================================Start motor style======================================== */
+.custom-header {
+    color: white;
+    /* background-image: url('../img/pngtree-blue-wavy-shiny-business-background-image_310643.jpg'); */
+    text-align: center;
+    padding: 50px 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* ظل للنصوص */
+    z-index: 99999;
+    box-sizing: border-box;
+}
+
+.custom-header h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.custom-header p {
+    font-size: 1.2rem;
+}
+.tabs{
+    margin-top: 40px;
+    margin-left: 35%;
+}
+.backimgcon{
+    background-image: url('../img/motors/motors-banner-new[1].png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: auto;
+    width:auto;
+    position: relative;
+    margin-top: 20px;
+}
+.col1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+    border: .5px solid transparent;
+    box-shadow: 0 .5px 8px transparent;
+    text-decoration: none;
+    color: black;
+    background-color: #ffecec !important;
+    
+}
+.col1:hover {
+    box-shadow: 0 .5px 8px #ffecec;
+    border: .5px solid #f7e5e5;
+    
+}
+
+.news{
+    height: 150px;
+}
+.btnfiltercar{
+    color: #666;
+    font-weight: 600;
+}
+.btnfiltercar:hover{
+    color: #ba0000;
+
+}
+.brandscar{
+    border: 1px solid #ebeeef;
+    border-radius: 5px;
+}
+
+/* =========================================End motor style======================================== */
+/* =========================================End vs style======================================== */
+
+.container-1 {
+    display: flex;
+    gap: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #f9f9f9;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.car-name {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: red; /* جعل اسم السيارة باللون الأحمر */
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    color: #666;
+}
+
+.card ul li {
+    margin: 5px 0;
+}
+
+.input-card {
+    justify-content: center;
+}
+
+.add-car {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.add-car span {
+    font-size: 2em;
+    color: #007bff;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.navbarvscar{
+    position: sticky;
+    top: 0;
+}
+
+/* =========================================End vs style======================================== */
